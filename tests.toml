@@ -50,7 +50,7 @@ test_format = 1.0
     sudo yunohost app install dex -f -a "domain=dex.domain.tld&path=/&oidc_name=&oidc_secret=&oidc_callback"
 
     sudo yunohost domain add seaweedfs.domain.tld
-    sudo yunohost app install seaweedfs -f -a "domain=seaweedfs.domain.tld&init_main_permission=visitors&admin=package_checker&password=minio_password1234"
+    sudo yunohost app install seaweedfs -f -a "domain=seaweedfs.domain.tld&init_main_permission=visitors&admin=package_checker&admin_pw=abcd1234&volume_size=100"
 
     echo "✅ End of preinstall"
     """
