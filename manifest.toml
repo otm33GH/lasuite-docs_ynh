@@ -44,7 +44,7 @@ ram.runtime = "500M"
 
     [install.s3]
     type = "app"
-    filter = "match(id, '^(minio|seaweedfs)(__[0-9+])?$')"
+    filter = "match(id, '^(minio|seaweedfs|versitygw)(__[0-9+])?$')"
     ask.en = "Select the S3 app (Minio or SeaweedFS) that will handle storage."
     ask.fr = "Sélectionnez l'app S3 (Minio ou SeaweedFS) qui gérera le stockage."
     help.en = "You need to have at least one instance of Minio or SeaweedFS installed beforehand on your server."
