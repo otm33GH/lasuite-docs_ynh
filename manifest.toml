@@ -45,10 +45,10 @@ ram.runtime = "500M"
     [install.s3]
     type = "app"
     filter = "match(id, '^(minio|seaweedfs|versitygw)(__[0-9+])?$')"
-    ask.en = "Select the S3 app (Minio or SeaweedFS) that will handle storage."
-    ask.fr = "Sélectionnez l'app S3 (Minio ou SeaweedFS) qui gérera le stockage."
-    help.en = "You need to have at least one instance of Minio or SeaweedFS installed beforehand on your server."
-    help.fr = "Vous devez avoir au moins une instance de Minio or SeaweedFS préalablement installée sur votre serveur."
+    ask.en = "Select the S3 app (Minio, SeaweedFS or VersityGW) that will handle storage."
+    ask.fr = "Sélectionnez l'app S3 (Minio, SeaweedFS or VersityGW) qui gérera le stockage."
+    help.en = "You need to have at least one instance of Minio, SeaweedFS or VersityGW installed beforehand on your server."
+    help.fr = "Vous devez avoir au moins une instance de Minio, SeaweedFS or VersityGW préalablement installée sur votre serveur."
 
     [install.domain]
     type = "domain"
