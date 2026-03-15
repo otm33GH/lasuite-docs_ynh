@@ -31,7 +31,7 @@ celery_broker_url=$(get_celery_broker_url)
 #=================================================
 ynh_script_progression "Creating S3 Bucket"
 
-s3="${s3:-minio}"
+#s3="${s3:-minio}"
 
 if [[ "${s3}" =~ minio* ]]; then
     s3_domain=$(ynh_app_setting_get --app="$s3" --key=domain)
