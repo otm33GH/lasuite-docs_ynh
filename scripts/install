@@ -70,9 +70,9 @@ elif [[ "${s3}" =~ versitygw* ]]; then
     s3_domain=$(ynh_app_setting_get --app="$s3" --key=domain)
     s3_password=$(ynh_string_random -l 32)
     s3_user=$app
-    vgw_admin=$(yunohost app setting versitygw admin_key)
-    vgw_admin_secret=$(yunohost app setting versitygw admin_secret)
-    vgw_port=$(yunohost app setting versitygw port)
+    vgw_admin=$(ynh_app_setting_get --app=versitygw --key=admin_key)
+    vgw_admin_secret=$(ynh_app_setting_get --app=versitygw --key=admin_secret)
+    vgw_port=$(ynh_app_setting_get --app=versitygw --key=port)
 
     yunohost app shell versitygw <<EOF
 ./versitygw admin -a $vgw_admin -s $vgw_admin_secret --er http://localhost:$vgw_port create-user -a $s3_user -s $s3_password -r user
